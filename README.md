@@ -90,11 +90,6 @@ Time used: 31189ms
 
    จากการเสิร์ชหาในอินเตอร์เน็ตพบว่า โปรแกรม Compiler หรือตัวภาษา C# จะมีการ Optimize ในเรื่องนี้ให้อยู่แล้ว เราไม่จำเป็นต้องเขียนให้ถึงระดับ bit หรือ shift operator เพื่อให้มีความไวขึ้น (ส่วนมากจะมีผลกับงานด้าน Hardware Register ในระดับล่าง หรือ Embedded Systems ที่มีการควบคุมฮาร์ดแวร์โดยตรง จะมีผลมากกว่าเครื่องคอมพิวเตอร์ที่มี Kernel เป็นตัวรองรับ และตัวโปรแกรม Compiler มีการ Optimize มาอีกที)                 
 
-   Reference:
-   - [Is multiplication and division using shift operators in C actually faster?](https://stackoverflow.com/questions/6357038/is-multiplication-and-division-using-shift-operators-in-c-actually-faster)
-   - [C#/XNA - Multiplication faster than Division?](https://stackoverflow.com/questions/5053810/c-xna-multiplication-faster-than-division)
-   - [What are the advantages of using bitwise operations?](https://softwareengineering.stackexchange.com/questions/13798/what-are-the-advantages-of-using-bitwise-operations)
-   
    ``` 
    (Pop Computer)
 
@@ -102,3 +97,9 @@ Time used: 31189ms
    Summation result: 888701676
    Time used: 2389ms
    ```
+
+   Reference:
+   - [Is multiplication and division using shift operators in C actually faster?](https://stackoverflow.com/questions/6357038/is-multiplication-and-division-using-shift-operators-in-c-actually-faster)
+   - [C#/XNA - Multiplication faster than Division?](https://stackoverflow.com/questions/5053810/c-xna-multiplication-faster-than-division)
+   - [What are the advantages of using bitwise operations?](https://softwareengineering.stackexchange.com/questions/13798/what-are-the-advantages-of-using-bitwise-operations)
+   
