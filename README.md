@@ -36,7 +36,7 @@ Time used: 31189ms
 
 1. Problem:จำนวนข้อมูลมีความยาวมากเกินไปทำให้ต้องใช้เวลาในการคำนวณนานมาก
 
-   Resolve:ทดลองแบ่ง Thread 2 ตัว คำนวณกันคนละครึ่ง เมื่อเสร็จ ค่านำค่าที่ได้ไปรวมกับตัวแปร sumglobal
+   Resolve:ทดลองแบ่ง เป็น 2 Thread คำนวณกันคนละครึ่ง เมื่อเสร็จ ค่านำค่าที่ได้ไปรวมกับตัวแปร sumglobal
 
      ``` 
      Summation result: 888701676
@@ -57,4 +57,12 @@ Time used: 31189ms
    13 Thread
    Summation result: 888701676
    Time used: 3104ms
+   ```
+3. Problem: เนื่องจากทดลองเพิ่ม Thread ไปเรื่อยๆแล้วพบว่าจำนวน Thread ที่ประมวลผลได้เร็วที่สุดคือค่าที่เท่ากับจำนวน Thread ของ CPU 
+   Resolve: ทำการดึงจำนวน Thread ของ CPU ที่มีมาช่วยแบ่งกันประมวลผล
+   
+   ``` 
+   8 Thread
+   Summation result: 888701676
+   Time used: 4287ms
    ```
