@@ -46,17 +46,17 @@ namespace Problem01
             for(index = firstIndex ; index < lastIndex ; index++)
             {
                 //Console.Write(Data_Global[index]);
-                if (Data_Global[index] % 2 == 0)
+                if ((((int)Data_Global[index]) & 1) == 0) // %2 //(((int)Data_Global[index]) & 1) //(Data_Global[index] %2)
                 {
                     result -= Data_Global[index];
                 }
                 else if (Data_Global[index] % 3 == 0)
                 {
-                    result += (Data_Global[index] * 2);
+                    result += (Data_Global[index] << 1); // *2
                 }
                 else if (Data_Global[index] % 5 == 0)
                 {
-                    result += (Data_Global[index] / 2);
+                    result += (Data_Global[index] >> 1); // /2
                 }
                 else if (Data_Global[index] % 7 == 0)
                 {
@@ -111,8 +111,6 @@ namespace Problem01
             sw.Stop();
             Console.WriteLine("Done.");           
             /* STOP */
-
-
 
             /* Result */
             Console.WriteLine("Summation result: {0}", Sum_Global);
