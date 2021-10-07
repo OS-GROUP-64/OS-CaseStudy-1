@@ -16,7 +16,7 @@
 <!-- How to install this project -->
 
 1. Clone this project
-2. Download [problem01.dat](https://goedu.kmitl.ac.th/pluginfile.php/62913/mod_assign/introattachment/0/problem01.cs?forcedownload=1) and put it in the Case Study #1 folder
+2. Download [problem01.dat](https://goedu.kmitl.ac.th/pluginfile.php/62913/mod_assign/introattachment/0/Problem01.rar?forcedownload=1) and put it in the Case Study #1 folder
 
 ## Issues and Resolves
 <!-- Note some problem in Issues then note it here. the How to solve can be left blank 
@@ -28,19 +28,33 @@ Example
    Resolve: Check the mirror.
 -->
 
-First Result :
+Standard Result :
 ```
 Summation result: 888701676
 Time used: 31189ms
 ```
 
-1. Problem: จำนวนข้อมูลมีความยาวมากเกินไปทำให้ต้องใช้เวลาในการคำนวณนานมาก
+1. Problem:จำนวนข้อมูลมีความยาวมากเกินไปทำให้ต้องใช้เวลาในการคำนวณนานมาก
 
-   Resolve: ทดลองแบ่ง Thread 2 ตัว คำนวณกันคนละครึ่ง เมื่อเสร็จ ค่านำค่าที่ได้ไปรวมกับตัวแปร sumGlobal
+   Resolve:ทดลองแบ่ง Thread 2 ตัว คำนวณกันคนละครึ่ง เมื่อเสร็จ ค่านำค่าที่ได้ไปรวมกับตัวแปร sumglobal
 
-``` 
-Summation result: 888701676
-Time used: 14392ms
-```
+     ``` 
+     Summation result: 888701676
+     Time used: 14392ms
+     ```
+2. Problem: ยิ่งเพิ่ม Thread ไปเรื่อย ๆ ก็จะยิ่งไวขึ้น
+   Resolve: ทดลองเพิ่ม Thread ไปเรื่อย ๆ ความเร็วในการคำนวนก็เพิ่มขึ้นเรื่อย ๆ จนกระทั่ง Thread ที่ใช้เกินจำนวน Thread ที่มี ทำให้การทำงานช้าลง
+   
+   ``` 
+   8 Thread
+   Summation result: 888701676
+   Time used: 4552ms
 
-#
+   12 Thread
+   Summation result: 888701676
+   Time used: 2647ms
+   
+   13 Thread
+   Summation result: 888701676
+   Time used: 3104ms
+   ```
