@@ -30,6 +30,8 @@ Example
 
 Standard Result :
 ```
+(Jame Computer)
+
 Summation result: 888701676
 Time used: 31189ms
 ```
@@ -39,14 +41,19 @@ Time used: 31189ms
    Resolve:ทดลองแบ่ง เป็น 2 Thread คำนวณกันคนละครึ่ง เมื่อเสร็จ ค่านำค่าที่ได้ไปรวมกับตัวแปร sumglobal
 
      ``` 
+     (Jame Computer)
+
      Summation result: 888701676
      Time used: 14392ms
      ```
 2. Problem: ยิ่งเพิ่ม Thread ไปเรื่อย ๆ ก็จะยิ่งไวขึ้น
+
    Resolve: ทดลองเพิ่ม Thread ไปเรื่อย ๆ ความเร็วในการคำนวนก็เพิ่มขึ้นเรื่อย ๆ จนกระทั่ง Thread ที่ใช้เกินจำนวน Thread ที่มี ทำให้การทำงานช้าลง
    
    ``` 
-   8 Thread
+   (Jame Computer)
+
+   8 Thread 
    Summation result: 888701676
    Time used: 4552ms
 
@@ -59,10 +66,34 @@ Time used: 31189ms
    Time used: 3104ms
    ```
 3. Problem: เนื่องจากทดลองเพิ่ม Thread ไปเรื่อยๆแล้วพบว่าจำนวน Thread ที่ประมวลผลได้เร็วที่สุดคือค่าที่เท่ากับจำนวน Thread ของ CPU 
+   
    Resolve: ทำการดึงจำนวน Thread ของ CPU ที่มีมาช่วยแบ่งกันประมวลผล
    
    ``` 
-   8 Thread
+   (Jame Computer)
+
+   8 Thread 
    Summation result: 888701676
    Time used: 4287ms
+   ```
+
+4. Problem: หลังจากเพิ่ม Thread ถึงจำนวนสูงสุดแล้ว เลยลองมาแก้ที่ อัลกอริทึมของการคำนวณในฟังชั่น sum()
+   
+   Resolve: ทดลองเปลี่ยนดังนี้
+   - คำสั่ง /2 เป็น Right shift operator (>>)
+   - คำสั่ง *2 เป็น Left shift operator (<<)
+   - คำสั่ง %2 เป็น AND bit operator (&)
+
+   ผลลัพท์ออกมามีความเร็วคงเดิม(ไม่ได้เพิ่มขึ้นหรือลดลงอย่างมีนัยยะสำคัญ)
+   ในทางทฤษฏี การคำนวณวงจรใน CPU (ALU) ข้างใน Hardware จะมีการคำนวณเกี่ยวกับการ shift operator
+   และ bit operator จะทำได้ไวกว่าการใช้ * หรือ / เลยคิดว่าน่าจะไวกว่า แต่ผลลัพท์กลับไม่เปลี่ยนแปลงไปมาก
+
+   จากการเสิร์ชหาในอินเตอร์เน็ตพบว่า โปรแกรม compiler หรือตัวภาษา C# จะมีการ Optimize ในเรื่องนี้ให้อยู่แล้ว เราไม่จำเป็นต้องเขียนให้ถึงระดับ bit หรือ shift operator เพื่อให้มีความไวขึ้น (ส่วนมากจะมีผลกับงานด้าน Hardware ในระดับล่าง หรือ Microcontroller ที่มีการควบคุมฮาร์ดแวร์โดยตรง น่าจะมีผลมากกว่า เครื่องคอมพิวเตอร์ ที่มี kernel เป็นตัวรองรับ และ ตัวโปรแกรมมีการ Optimize มาอีกที)                         
+   
+   ``` 
+   (Pop Computer)
+
+   12 Thread 
+   Summation result: 888701676
+   Time used: 2389ms
    ```

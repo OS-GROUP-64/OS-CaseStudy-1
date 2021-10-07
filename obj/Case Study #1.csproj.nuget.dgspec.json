@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Downloads\\OS-BACKUP-1.0\\Case Study #1\\Case Study #1.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\OS-CaseStudy-1\\Case Study #1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Downloads\\OS-BACKUP-1.0\\Case Study #1\\Case Study #1.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\OS-CaseStudy-1\\Case Study #1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\OS-BACKUP-1.0\\Case Study #1\\Case Study #1.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\OS-CaseStudy-1\\Case Study #1.csproj",
         "projectName": "Case Study #1",
-        "projectPath": "C:\\Users\\ASUS\\Downloads\\OS-BACKUP-1.0\\Case Study #1\\Case Study #1.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\OS-CaseStudy-1\\Case Study #1.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Downloads\\OS-BACKUP-1.0\\Case Study #1\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\OS-CaseStudy-1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -57,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
