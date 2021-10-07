@@ -1,0 +1,64 @@
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.exe
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.deps.json
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.json
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.dev.json
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.dll
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\ref\Case Study #1.dll
+D:\Work\Study\3rd Year\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.pdb
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.AssemblyReference.cache
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfoInputs.cache
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfo.cs
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.CoreCompileInputs.cache
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.dll
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\ref\Case Study #1.dll
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.pdb
+D:\Work\Study\3rd Year\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.exe
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.deps.json
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.json
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.dll
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\ref\Case Study #1.dll
+C:\Users\ASUS\Desktop\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.pdb
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.dll
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\ref\Case Study #1.dll
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.pdb
+C:\Users\ASUS\Desktop\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.genruntimeconfig.cache
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.exe
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.deps.json
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.json
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.dev.json
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.dll
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\ref\Case Study #1.dll
+G:\My Drive\Work\OS\Git\OS\Case Study #1\bin\Debug\net5.0\Case Study #1.pdb
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.AssemblyReference.cache
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfoInputs.cache
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfo.cs
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.CoreCompileInputs.cache
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.dll
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\ref\Case Study #1.dll
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.pdb
+G:\My Drive\Work\OS\Git\OS\Case Study #1\obj\Debug\net5.0\Case Study #1.genruntimeconfig.cache
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\Case Study #1.exe
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\Case Study #1.deps.json
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.json
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\Case Study #1.runtimeconfig.dev.json
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\Case Study #1.dll
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\ref\Case Study #1.dll
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\bin\Debug\net5.0\Case Study #1.pdb
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.dll
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\ref\Case Study #1.dll
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.pdb
+C:\Users\ASUS\Downloads\OS-BACKUP-1.0\Case Study #1\obj\Debug\net5.0\Case Study #1.genruntimeconfig.cache
