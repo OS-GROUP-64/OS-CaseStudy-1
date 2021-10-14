@@ -11,7 +11,7 @@ namespace Problem01
     {
         static byte[] Data_Global = new byte[1000000000];
         static long Sum_Global = 0;
-        static int NUM_THREAD = Environment.ProcessorCount;
+        static int G_index = 0;
 
         static int ReadData()
         {
@@ -35,53 +35,54 @@ namespace Problem01
 
             return returnData;
         }
-        static long sum(int threadN, int N)
+        static void sum()
         {
-            int firstIndex = (int)(1000000000 * (threadN*1.0 / N*1.0));
-            //Console.WriteLine("\n\nFirst Index :" + firstIndex);
-            int lastIndex = (int)(1000000000 * ((threadN + 1)*1.0 / N*1.0));
-            //Console.WriteLine("Last Index :" + lastIndex);
-            int index;
-            long result = 0;
-            for(index = firstIndex ; index < lastIndex ; index++)
+            if (Data_Global[G_index] % 2 == 0)
             {
-                //Console.Write(Data_Global[index]);
-                if ((((int)Data_Global[index]) & 1) == 0) // %2 //(((int)Data_Global[index]) & 1) //(Data_Global[index] %2)
-                {
-                    result -= Data_Global[index];
-                }
-                else if (Data_Global[index] % 3 == 0)
-                {
-                    result += (Data_Global[index] << 1); // *2
-                }
-                else if (Data_Global[index] % 5 == 0)
-                {
-                    result += (Data_Global[index] >> 1); // /2
-                }
-                else if (Data_Global[index] % 7 == 0)
-                {
-                    result += (Data_Global[index] / 3);
-                }
-                Data_Global[index] = 0;
+                Sum_Global -= Data_Global[G_index];
             }
-            return result;
+            else if (Data_Global[G_index] % 3 == 0)
+            {
+                Sum_Global += (Data_Global[G_index]*2);
+            }
+            else if (Data_Global[G_index] % 5 == 0)
+            {
+                Sum_Global += (Data_Global[G_index] / 2);
+            }
+            else if (Data_Global[G_index] %7 == 0)
+            {
+                Sum_Global += (Data_Global[G_index] / 3);
+            }
+            Data_Global[G_index] = 0;
+            G_index++;   
         }
 
-        static void worker(object num)
+        static void worker1()
         {
-            long Sum_Local = 0;
-            Sum_Local = sum((int)num, NUM_THREAD); //#threadNumber, all threads
-            //Console.WriteLine("Summation W1 result: {0}", Sum_Local);
-            Sum_Global+=Sum_Local;
+            int i;
+            for(i=0;i < 500; i++){ //500000000 origin test here
+                sum();
+                Console.WriteLine("T1 {0} {1}",G_index, Sum_Global);
+            }
+        }
+
+        static void worker2()
+        {
+            int i;
+            for(i=0;i < 500; i++){ //500000000 origin test here
+                sum();
+                Console.WriteLine("T2 {0} {1}",G_index, Sum_Global);
+            }
         }
 
         static void Main(string[] args)
         {
             Stopwatch sw = new Stopwatch();
-            int y;
+            int i, y;
 
-            Console.WriteLine("Thread Num : {0}", NUM_THREAD);
-            Thread[] threadsArray = new Thread[NUM_THREAD];
+            /* Thread */
+            Thread th1 = new Thread(worker1);
+            Thread th2 = new Thread(worker2);
 
             /* Read data from file */
             Console.Write("Data read...");
@@ -95,22 +96,19 @@ namespace Problem01
                 Console.WriteLine("Read Failed!");
             }
 
-
             /* Start */
-            Console.Write("\n\nWorking...\n");
+            Console.Write("\n\nWorking...");
             sw.Start();
-
-            for (int i=0; i<NUM_THREAD; i++)
-            {
-                threadsArray[i] = new Thread(worker);
-                threadsArray[i].Start(i);
-            }
-            for (int i=0; i<NUM_THREAD; i++)
-                threadsArray[i].Join();     
-
+            
+            th1.Start();
+            th2.Start();
+            th1.Join();
+            th2.Join();
+            // for (i = 0; i < 1000000000; i++){
+            //     sum();
+            // }           
             sw.Stop();
-            Console.WriteLine("Done.");           
-            /* STOP */
+            Console.WriteLine("Done.");
 
             /* Result */
             Console.WriteLine("Summation result: {0}", Sum_Global);
